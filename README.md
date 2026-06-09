@@ -2,20 +2,19 @@
 
 > A curated list of open source Bitcoin projects worth contributing to.
 
-This list helps newcomers and seasoned developers find actively maintained, openly licensed Bitcoin open source projects to contribute to. Beyond pointing to each project, every entry shows **what kind of help it needs**, **which skills are useful**, and **whether it's currently ready for contributors** — so you can find a project that matches both your interests and your skill set.
+This list helps newcomers and seasoned developers find actively maintained, openly licensed Bitcoin projects to contribute to. Each entry shows **what the project needs**, **the skills involved**, **how ready it is for contributors**, and **who to contact** so you can find a project that matches your interests and skill set.
 
-Every project listed here meets our [inclusion criteria](CONTRIBUTING.md): an OSI-approved open source license, publicly available source code, and recent development activity.
+## Column guide
 
-## How to read this list
-
-Each project entry includes the following fields:
-
-- **Description** — a one-line summary of what the project does.
-- **Languages** — the primary programming language(s).
-- **Looking for** — the *types* of contributions wanted (e.g. code, docs, testing, design, translation).
-- **Skills needed** — the technical or domain knowledge that helps (e.g. Rust, React, cryptography).
+- **Project** — name, linked to its source repository.
+- **Description** — a one-line summary.
+- **Languages** — primary programming language(s).
 - **Status** — contribution readiness (see legend below).
-- **Maintainer / contact** — where to reach the team before diving in.
+- **Contributor Needs** — the types of contributions wanted.
+- **Required Skills** — technical/domain knowledge that helps.
+- **Readiness** — how approachable contributing is (e.g. *good first issues available*, *intermediate*, *advanced*).
+- **Maintainer / contact** — primary maintainer GitHub handle(s) or project socials.
+- **Btrust Builders** — Btrust Builders community members active on the project.
 
 **Status legend:**
 
@@ -24,140 +23,83 @@ Each project entry includes the following fields:
 - 🟡 **Limited** — accepting help only in specific areas right now.
 - 🔴 **Paused** — not currently accepting external contributions.
 
-<!--
-ENTRY TEMPLATE (copy this when adding a project; keep fields in this order):
-
-### Project Name
-One-line description.
-- **Languages:** Language1, Language2
-- **Looking for:** e.g. code, documentation, testing
-- **Skills needed:** e.g. Rust, protocol knowledge
-- **Status:** 🟢 Ready  (use one value from the legend)
-- **Maintainer / contact:** Prefer a durable, PUBLIC contact — a GitHub handle, the repo's Issues/Discussions, or a project chat(Slack, Discord.. e.t.c). Avoid personal emails.
-
-Add projects alphabetically within their section.
--->
-
 ## Contents
 
-- [Node Implementations](#node-implementations)
-- [Wallets](#wallets)
+- [Full Node](#full-node)
 - [Lightning Network](#lightning-network)
+- [Wallets](#wallets)
 - [Libraries & SDKs](#libraries--sdks)
 - [Developer Tools](#developer-tools)
-- [Block Explorers](#block-explorers)
-- [Mining](#mining)
-- [Privacy](#privacy)
-- [Education & Documentation](#education--documentation)
 - [Contributing](#contributing)
 - [License](#license)
 
----
-
-## Node Implementations
+## Full Node
 
 > Full node and protocol implementations.
 
-### [Bitcoin Core](https://github.com/bitcoin/bitcoin)
-The reference implementation of the Bitcoin protocol.
-- **Languages:** C++, Python
-- **Looking for:** code review, testing, documentation
-- **Skills needed:** C++, consensus/protocol knowledge
-- **Status:** 🟢 Ready
-- **Maintainer / contact:** via GitHub Issues and the project's developer mailing list
-
-### [btcd](https://github.com/btcsuite/btcd)
-An alternative full node implementation written in Go.
-- **Languages:** Go
-- **Looking for:** code, testing, documentation
-- **Skills needed:** Go
-- **Status:** 🟡 Limited
-- **Maintainer / contact:** via GitHub Issues
-
-## Wallets
-
-> Desktop, mobile, and hardware wallet projects.
-
-### [Sparrow Wallet](https://github.com/sparrowwallet/sparrow)
-A desktop wallet emphasizing transparency and self-custody.
-- **Languages:** Java
-- **Looking for:** code, testing, UX feedback
-- **Skills needed:** Java, JavaFX
-- **Status:** 🆕 Beginner-friendly
-- **Maintainer / contact:** via GitHub Issues
-
-<!-- Add more wallets here using the entry template. -->
+| Project | Description | Languages | Status | Contributor Needs | Required Skills | Readiness | Maintainer | Btrust Builders |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| [Bitcoin Core](https://github.com/bitcoin/bitcoin) | The reference implementation of the Bitcoin protocol. | C++, Python | 🟢 Ready | Protocol development, bug fixes, code review, test coverage | C++, Python, strong understanding of Bitcoin consensus rules | Intermediate to advanced — no labelled good-first issues; start with bitcoincore.academy | @laanwj, @fanquake, @achow101 | @eunovo, @naiyoma |
+| [btcd](https://github.com/btcsuite/btcd) | An alternative full-node Bitcoin implementation written in Go. | Go | 🟡 Limited | Bug fixes, protocol compatibility, testing | Go, Bitcoin protocol fundamentals | Intermediate | btcsuite org | None confirmed yet |
 
 ## Lightning Network
 
 > Lightning node implementations and related infrastructure.
 
-### [LND](https://github.com/lightningnetwork/lnd)
-The Lightning Network Daemon, a complete Lightning implementation.
-- **Languages:** Go
-- **Looking for:** code, documentation, testing
-- **Skills needed:** Go, Lightning/protocol knowledge
-- **Status:** 🟢 Ready
-- **Maintainer / contact:** via GitHub Issues and the project's community Slack
+| Project | Description | Languages | Status | Contributor Needs | Required Skills | Readiness | Maintainer | Btrust Builders |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| [LND](https://github.com/lightningnetwork/lnd) | Full Lightning Network node implementation by Lightning Labs. | Go | 🟢 Ready | Bug fixes, feature development, documentation | Go, Lightning Network protocol basics | Good first issues available | @Roasbeef, @guggero | @Abdulkbk |
+| [LDK (rust-lightning)](https://github.com/lightningdevkit/rust-lightning) | A highly modular Bitcoin Lightning library in Rust — the foundation that powers LDK Node and LDK Server. | Rust | 🟢 Ready | Core library development, protocol implementation, testing | Rust, Lightning protocol, deep Bitcoin knowledge | Intermediate to advanced | @TheBlueMatt, @valentinewallace | None confirmed yet |
+| [LDK Node](https://github.com/lightningdevkit/ldk-node) | A ready-to-go Lightning node implementation built on LDK. | Rust | 🟢 Ready | Implementation work, testing, documentation | Rust, Lightning protocol knowledge | Active — good first issues available | @tnull, @jkczyz | @Anyitechs |
+| [LDK Server](https://github.com/lightningdevkit/ldk-server) | A fully-functional Lightning node in daemon form built on LDK. | Rust | 🟢 Ready | Feature development, testing | Rust, Lightning protocol knowledge | Good first issues available | @G8XSU, @benthecarman | @Anyitechs |
 
-<!-- Add more Lightning projects here using the entry template. -->
+## Wallets
+
+> Desktop, mobile, and hardware wallet projects.
+
+| Project | Description | Languages | Status | Contributor Needs | Required Skills | Readiness | Maintainer | Btrust Builders |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| [Sparrow Wallet](https://github.com/sparrowwallet/sparrow) | A desktop wallet emphasizing transparency and self-custody. | Java | 🟢 Ready | Bug fixes, code, testing, UX feedback | Java, JavaFX | Good first issues available | @TBD | @TBD |
 
 ## Libraries & SDKs
 
 > Reusable libraries for building Bitcoin applications.
 
-### [BDK (Bitcoin Dev Kit)](https://github.com/bitcoindevkit/bdk)
-A modern library for building wallets and Bitcoin apps.
-- **Languages:** Rust
-- **Looking for:** code, documentation, examples/usages
-- **Skills needed:** Rust
-- **Status:** 🆕 Beginner-friendly
-- **Maintainer / contact:** via GitHub Issues and the project's Discord
-
-<!-- Add more libraries here using the entry template. -->
+_Projects coming soon — see [Contributing](#contributing) to add one._
 
 ## Developer Tools
 
 > Tooling for developing, testing, and debugging Bitcoin software.
 
-<!-- Add developer tools here using the entry template. -->
+_Projects coming soon — see [Contributing](#contributing) to add one._
 
 ## Block Explorers
 
 > Self-hostable explorers and chain-analysis interfaces.
 
-<!-- Add block explorers here using the entry template. -->
+_Projects coming soon — see [Contributing](#contributing) to add one._
 
 ## Mining
 
 > Mining software and pool infrastructure.
 
-<!-- Add mining projects here using the entry template. -->
+_Projects coming soon — see [Contributing](#contributing) to add one._
 
 ## Privacy
 
 > Tools focused on transaction privacy and coin control.
 
-<!-- Add privacy projects here using the entry template. -->
+_Projects coming soon — see [Contributing](#contributing) to add one._
 
 ## Education & Documentation
 
 > Books, tutorials, and reference material (open source repos).
 
-<!-- Add education resources here using the entry template. -->
-
----
+_Projects coming soon — see [Contributing](#contributing) to add one._
 
 ## Contributing
 
-Contributions are welcome! Before submitting a project, please read the [contribution guidelines](CONTRIBUTING.md) to make sure it meets the inclusion criteria. In short:
-
-1. Fork this repository.
-2. Add your project to the appropriate section, in alphabetical order, using the
-   entry template at the top of this file. Fill in **all** fields, and use a value from the status legend.
-3. For the contact field, use a durable public channel (GitHub handle,
-   Issues/Discussions, or a project chat) rather than a personal email.
-4. Open a pull request describing the project and why it belongs here.
+Contributions are welcome! Please read the [contribution guidelines](CONTRIBUTING.md) before submitting. To add a project, add a new row to the relevant category table using the column order above, keeping rows alphabetical within their section.
 
 Keeping the `Status` and contact fields accurate is the most valuable ongoing contribution — if a project's readiness has changed, please open an issue or PR to update it. Suggestions to remove inactive or abandoned projects are equally welcome.
 
