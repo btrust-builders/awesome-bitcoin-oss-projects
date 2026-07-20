@@ -94,6 +94,7 @@ to contact so you can find a project that matches your interests and skill set.
 | [LNDHub](https://github.com/BlueWallet/LndHub) | A wrapper for the Lightning Network Daemon providing custodial wallet accounts via a REST API. | JavaScript | 🟢 Ready | API improvements, bug fixes, documentation | JavaScript, LND API, REST APIs | Intermediate |
 | [ln-service](https://github.com/alexbosworth/ln-service) | Node.js interface to the Lightning Network Daemon (LND). | JavaScript | 🟢 Ready | API improvements, testing, documentation | JavaScript/Node.js, LND gRPC API | Intermediate |
 | [rust-bitcoin](https://github.com/rust-bitcoin/rust-bitcoin) | The foundational Rust library for working with Bitcoin data structures and primitives. | Rust | 🆕 Beginner-friendly | API improvements, test coverage, documentation | Rust, Bitcoin protocol fundamentals | Good first issues and help wanted available |
+| [Validating Lightning Signer (VLS)](https://gitlab.com/lightning-signer/validating-lightning-signer) | A library and reference implementation of a signer module that validates and enforces policy on Lightning transactions before signing, keeping private keys isolated from the node. | Rust | 🟢 Ready | Code review, testing, protocol integration | Rust, Lightning protocol, cryptography | Intermediate to advanced | [Matrix](https://matrix.to/#/#vls:matrix.org) |
 
 ---
 
