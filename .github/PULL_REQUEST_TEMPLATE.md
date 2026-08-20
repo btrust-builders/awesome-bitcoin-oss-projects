@@ -14,5 +14,4 @@
 - [ ] The project meets all [inclusion criteria](../CONTRIBUTING.md#inclusion-criteria).
 - [ ] All fields are filled in.
 - [ ] The `Status` uses a value from the [legend](../CONTRIBUTING.md#status-legend).
-- [ ] The contact is a public, durable channel (not a personal email).
 - [ ] The entry is in alphabetical order within its section.

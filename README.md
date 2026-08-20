@@ -119,6 +119,8 @@ to contact so you can find a project that matches your interests and skill set.
 | --- | --- | --- | --- | --- | --- | --- |
 | [P2Pool v2](https://github.com/p2poolv2/p2poolv2) | A decentralised peer-to-peer Bitcoin mining pool, rebuilt from the ground up. | Rust, C++ | 🟡 Limited | Core protocol work, P2P networking, testing | Rust or C++, Bitcoin mining/Stratum protocol | Early-stage; issues available |
 | [Stratum v2 Reference Implementation (SRI)](https://github.com/stratum-mining/stratum) | The reference implementation of Stratum v2, the next-generation Bitcoin mining protocol. | Rust | 🆕 Beginner-friendly | Protocol implementation, testing, documentation | Rust, Bitcoin mining, Stratum protocol | Good first issues available |
+| [Proto Fleet](https://github.com/block/proto-fleet) | Proto Fleet is open-source fleet management software for bitcoin miners. It helps operators pair devices, monitor telemetry, and manage mining infrastructure without giving up control. | Go / Typescript | 🆕 Beginner-friendly | Protocol implementation, testing, documentation | Go, Typescript, Bitcoin mining. | Good first issues available |
+| [256foundation Mujina](https://github.com/256foundation/mujina) | Run any hashboard from any vendor on any control board, written by hardware engineers, protocol authors, and mining operators from across the industry. | Rust | 🆕 Beginner-friendly | Protocol implementation, testing, documentation | Rust, Bitcoin mining, Open-Source Bitcoin Mining Firmware | Good first issues available |
 
 ---
 

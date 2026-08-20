@@ -57,8 +57,6 @@ Each project is one row in its category's table. The columns, in order:
 | **Contributor Needs** | The *types* of contribution wanted (e.g. code, documentation, testing). |
 | **Required Skills** | Technical/domain knowledge that helps (languages, frameworks, areas like cryptography). |
 | **Readiness** | How approachable contributing is — one value from [Readiness values](#readiness-values), with an optional short note. |
-| **Maintainer** | Maintainer GitHub **handle(s)** or a **durable, public** channel: a GitHub handle, the repo's Issues/Discussions, or an official project chat(Slack, Discord). **Do not list personal email addresses** — they go stale and create a privacy burden. |
-| **Btrust Builders** | GitHub handles of Btrust Builders members active on the project, or `None confirmed yet`. |
 
 ## Status legend
 
@@ -90,7 +88,7 @@ Please don't invent new Status or Readiness values — if none fit, open an issu
 Copy this row template, fill in every column, and place it in the correct category table in **alphabetical order**:
 
 ```
-| [Project Name](repo-url) | One-line description. | Lang1, Lang2 | 🟢 Ready | code, documentation, testing | Rust, Lightning protocol | Intermediate | @maintainer | None confirmed yet |
+| [Project Name](repo-url) | One-line description. | Lang1, Lang2 | 🟢 Ready | code, documentation, testing | Rust, Lightning protocol | Intermediate |
 ```
 
 If a project doesn't fit any existing category, open an issue proposing the new category rather than adding one ad hoc, so the structure stays consistent.
@@ -109,7 +107,6 @@ Quick checklist before opening the PR:
 - [ ] Every column is filled in.
 - [ ] `Status` uses a value from [Status legend](#status-legend).
 - [ ] `Readiness` uses a value from [Readiness values](#readiness-values).
-- [ ] `Maintainer / Project Public Channel` is a GitHub handle or an official project chat(Slack, Discord) — not a personal email.
 - [ ] The row is in alphabetical order within its section.
 - [ ] The table still renders (the row has the right number of `|` separators).
 
